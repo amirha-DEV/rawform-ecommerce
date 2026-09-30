@@ -1,1 +1,12 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@theme {
+  --color-raw-black: #111111;
+  --color-raw-bg: #f7f7f5;
+  --color-raw-surface: #ffffff;
+  --color-raw-muted: #777777;
+  --color-raw-border: #e5e5e5;
+  --color-raw-accent: #c8ff00;
+  --color-raw-danger: #e5484d;
+  --color-raw-success: #16875d;
+}
