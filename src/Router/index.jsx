@@ -11,6 +11,7 @@ import Register from "../Pages/Auth/Register";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import Profile from "../Pages/Profile";
+import Orders from "../Pages/Orders";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
+      },
+      {
+        path: "orders",
+        element: <Orders />,
       },
     ],
   },
