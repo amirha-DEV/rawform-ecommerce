@@ -10,6 +10,7 @@ import Login from "../Pages/Auth/Login";
 import Register from "../Pages/Auth/Register";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
+import Profile from "../Pages/Profile";
 
 const router = createBrowserRouter([
   {
@@ -42,12 +43,16 @@ const router = createBrowserRouter([
       },
       {
         path: "about",
-        element: <About />
+        element: <About />,
       },
       {
         path: "contact",
-        element: <Contact />
-      }
+        element: <Contact />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
     ],
   },
   {
