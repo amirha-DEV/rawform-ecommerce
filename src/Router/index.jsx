@@ -4,6 +4,10 @@ import Home from "../Pages/Home";
 import Shop from "../Pages/Shop";
 import ProductDetails from "../Pages/ProductDetails";
 import Cart from "../Pages/Cart";
+import Checkout from "../Pages/Checkout";
+import OrderSuccess from "../Pages/OrderSuccess";
+import Login from "../Pages/Auth/Login";
+import Register from "../Pages/Auth/Register";
 
 const router = createBrowserRouter([
   {
@@ -12,21 +16,37 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home/>,
+        element: <Home />,
       },
       {
         path: "shop",
-        element: <Shop/>
+        element: <Shop />,
       },
       {
         path: "products/:id",
-        element: <ProductDetails/>
+        element: <ProductDetails />,
       },
       {
         path: "cart",
-        element: <Cart/>
-      }
+        element: <Cart />,
+      },
+      {
+        path: "checkout",
+        element: <Checkout />,
+      },
+      {
+        path: "order-success",
+        element: <OrderSuccess />,
+      },
     ],
+  },
+  {
+    path: "login",
+    element: <Login />,
+  },
+  {
+    path: "register",
+    element: <Register />,
   },
 ]);
 
