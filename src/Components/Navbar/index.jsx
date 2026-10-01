@@ -38,14 +38,14 @@ export default function Navbar() {
           </Link>
 
           <Link
-            to="#"
+            to="/about"
             className="text-sm font-medium transition hover:text-raw-muted"
           >
             ABOUT
           </Link>
 
           <Link
-            to="#"
+            to="/contact"
             className="text-sm font-medium transition hover:text-raw-muted"
           >
             CONTACT
@@ -165,7 +165,7 @@ export default function Navbar() {
               </Link>
 
               <Link
-                to="#"
+                to="/about"
                 onClick={closeMenu}
                 className="flex items-center justify-between py-5 text-lg font-bold"
               >
@@ -174,7 +174,7 @@ export default function Navbar() {
               </Link>
 
               <Link
-                to="#"
+                to="/contact"
                 onClick={closeMenu}
                 className="flex items-center justify-between py-5 text-lg font-bold"
               >
