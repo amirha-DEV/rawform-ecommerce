@@ -12,6 +12,7 @@ import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import Profile from "../Pages/Profile";
 import Orders from "../Pages/Orders";
+import OrderDetails from "../Pages/OrderDetails";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
       {
         path: "orders",
         element: <Orders />,
+      },
+      {
+        path: "orders/:id",
+        element: <OrderDetails />,
       },
     ],
   },
